@@ -19,7 +19,7 @@ class Transfer
       receiver.balance = receiver.balance + amount
       sender.balance = sender.balance - amount
       @status = "complete"
-      binding.pry
+      #binding.pry
     else
       sender.balance < amount || sender.close_account
       "Transaction rejected. Please check your account balance."
