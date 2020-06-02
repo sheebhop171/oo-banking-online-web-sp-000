@@ -31,6 +31,8 @@ class Transfer
     if @status = "complete"
     receiver.balance = receiver.balance + amount
     sender.balance = sender.balance - amount
+    else
+    end
 
   end
 
