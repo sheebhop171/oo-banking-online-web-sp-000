@@ -20,7 +20,7 @@ class Transfer
       sender.balance = sender.balance - amount
       @status = "complete"
       binding.pry
-    elsif
+    else
       sender.balance < amount || sender.status == "closed"
       "Transaction rejected. Please check your account balance."
       @status = "rejected"
