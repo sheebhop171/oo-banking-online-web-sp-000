@@ -15,11 +15,11 @@ class Transfer
 
   def execute_transaction
    #binding.pry
-    if @status = "pending" 
+    if @status = "pending"
       sender.balance > amount
       receiver.balance = receiver.balance + amount
       sender.balance = sender.balance - amount
-      binding.pry
+      #binding.pry
       @status = "complete"
     elsif
       sender.balance < amount || sender.close_account?
