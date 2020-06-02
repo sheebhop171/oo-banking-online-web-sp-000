@@ -24,7 +24,6 @@ class Transfer
       sender.balance < amount || sender.status == "closed"
       "Transaction rejected. Please check your account balance."
       @status = "rejected"
-    else
     end
   end
 
