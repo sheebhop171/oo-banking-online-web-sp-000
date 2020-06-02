@@ -28,7 +28,8 @@ class Transfer
   end
 
   def reverse_transfer
-
+    sender.balance = receiver.balance + amount
+    receiver.balance = sender.balance - amount
 
   end
 
