@@ -18,6 +18,7 @@ class Transfer
     if sender.balance > amount
       receiver.balance = receiver.balance + amount
       sender.balance = sender.balance - amount
+      binding.pry
       @status = "complete"
     elsif
       sender.balance < amount || sender.close_account?
