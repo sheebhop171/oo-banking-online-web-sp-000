@@ -32,7 +32,7 @@ class Transfer
     receiver.balance = receiver.balance + amount
     sender.balance = sender.balance - amount
     else
-    end
+  end
 
   end
 
